@@ -12,8 +12,8 @@ except AssertionError:
     print "wrong type"
 
 isinstance (IUPAC.Alphabet._get_base_alphabet(s2.alphabet), IUPAC.ExtendedIUPACDNA)
->>> False
-#my_seq = Seq(seq, IUPAC.unambiguous_dna)
+#>>> False
+
 my_seq = Seq(seq, IUPAC.extended_dna)
 
 print "original\t\t", my_seq
