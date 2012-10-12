@@ -1,3 +1,4 @@
+#!/usr/bin/python
 import pybedtools
 import sys
 import re
@@ -17,13 +18,14 @@ def check_exons(exons_list,strand):
     for exon in exons:
         if exon.strand == "+":
             result = pattern.match(exon.name)
-            print exon.chrom+"\t"+str(exon.start)+"\t"+str(exon.stop)+"\t"+result.group(1)+"_"+cardio_dict.Cardio_dict[result.group(1)]+"_exon_"+str(i+1)+"_Flanking"+result.group(3)+"_"+result.group(4)+"\t"+exon.score+"\t"+exon.strand
+            print exon.chrom+"\t"+str(exon.start)+"\t"+str(exon.stop)+"\t"+cardio_dict.Cardio_dict[result.group(1)]+"_"+result.group(1)+"_exon_"+str(i+1)+"_Flanking"+result.group(3)+"_"+result.group(4)+"\t"+exon.score+"\t"+exon.strand
             i += 1
         else:
             result = pattern.match(exon.name)
-            print exon.chrom+"\t"+str(exon.start)+"\t"+str(exon.stop)+"\t"+result.group(1)+"_"+cardio_dict.Cardio_dict[result.group(1)]+"_exon_"+str(number_exons-i)+"_Flanking"+result.group(3)+"_"+result.group(4)+"\t"+exon.score+"\t"+exon.strand
+            print exon.chrom+"\t"+str(exon.start)+"\t"+str(exon.stop)+"\t"+cardio_dict.Cardio_dict[result.group(1)]+"_"+result.group(1)+"_exon_"+str(number_exons-i)+"_Flanking"+result.group(3)+"_"+result.group(4)+"\t"+exon.score+"\t"+exon.strand
             i += 1
-bed_file = pybedtools.BedTool("/Users/yvans/Home/Dropbox/travail/BED_GFF_INTERVALS/UseMe/Cardio/Ucsc_Coding_exons_Cardio_list_b37+-20.bed")
+#bed_file = pybedtools.BedTool("/Users/yvans/Home/Dropbox/travail/BED_GFF_INTERVALS/UseMe/Cardio/Ucsc_Coding_exons_Cardio_list_b37+-20.bed")
+bed_file = pybedtools.BedTool(sys.argv[1])
 exons = []
 feature = "None"
 strand_dict ={'f':"+", 'r':"-"}
