@@ -9,20 +9,20 @@ def check_exons(exons_list,strand):
     # check the strand if minus/r rename exon from big to small
     # if positive/f rename from small to big
     # rename need to be on the name
-    # NM_000364_cds_0_20_chr1_201328338_r
+    # NM_000364_exon_0_50_chr1_201328142_r
     # to 
-    # NM_004949_DSC2_6_20_r    0    -
+    # TNNT2_NM_000364_exon_15_Flanking_0_r    0    -
     number_exons = len(exons_list)
     pattern = re.compile("(NM_\d+)_exon_(\d+)(_\d+)_chr\d+_\d+_(\w)")
     i = 0
     for exon in exons:
         if exon.strand == "+":
             result = pattern.match(exon.name)
-            print exon.chrom+"\t"+str(exon.start)+"\t"+str(exon.stop)+"\t"+cardio_dict.Cardio_dict[result.group(1)]+"_"+result.group(1)+"_exon_"+str(i+1)+"_Flanking"+result.group(3)+"_"+result.group(4)+"\t"+exon.score+"\t"+exon.strand
+            print exon.chrom+"\t"+str(exon.start)+"\t"+str(exon.stop)+"\t"+cardio_dict.Cardio_dict[result.group(1)]+"_"+result.group(1)+"_exon_"+str(i+1)+"_"+result.group(4)+"\t"+exon.score+"\t"+exon.strand
             i += 1
         else:
             result = pattern.match(exon.name)
-            print exon.chrom+"\t"+str(exon.start)+"\t"+str(exon.stop)+"\t"+cardio_dict.Cardio_dict[result.group(1)]+"_"+result.group(1)+"_exon_"+str(number_exons-i)+"_Flanking"+result.group(3)+"_"+result.group(4)+"\t"+exon.score+"\t"+exon.strand
+            print exon.chrom+"\t"+str(exon.start)+"\t"+str(exon.stop)+"\t"+cardio_dict.Cardio_dict[result.group(1)]+"_"+result.group(1)+"_exon_"+str(number_exons-i)+""_"+result.group(4)+"\t"+exon.score+"\t"+exon.strand
             i += 1
 #bed_file = pybedtools.BedTool("/Users/yvans/Home/Dropbox/travail/BED_GFF_INTERVALS/UseMe/Cardio/Ucsc_Coding_exons_Cardio_list_b37+-20.bed")
 bed_file = pybedtools.BedTool(sys.argv[1])
@@ -31,6 +31,7 @@ feature = "None"
 strand_dict ={'f':"+", 'r':"-"}
 strand_letter = ""
 seed = re.compile("(NM_\d+)_exon_\d+_\d+_chr\d+_\d+_(\w)")
+
 for line in bed_file:
     result = seed.match(line.name)
     if feature != result.group(1):
