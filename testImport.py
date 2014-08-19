@@ -1,0 +1,3 @@
+import cardio_dict
+
+print cardio_dict.Cardio_dict
