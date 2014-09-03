@@ -1,0 +1,26 @@
+/Volumes/data1.odin/001_exome/diagnosticSamples//EE/Sample_Diag-excap15-D12-6772-KIT-AI50MbXT.130716_SN586_0171_AD28J5ACXX/060_delivery/Sample_Diag-excap15-D12-6772-KIT-AI50MbXT.130716_SN586_0171_AD28J5ACXX.snp.raw.snpFingerPrintingTest.vcf									
+Sample_Diag-excap15-D12-6772-KIT-AI50MbXT 									
+RS	RS	REF	ALT	Genotype	readDepth	allelic depth REF	allelic depth ALT	CHROM	POS
+rs786906 	rs786906 	T 	C 	T/C 	150 	73 	76 	1 	89271574
+rs2296292 	rs2296292 	A 	C 	A/C 	115 	62 	53 	1 	183086757
+rs1137288 	rs1137288 	T 	C 	C/C 	110 	1 	109 	2 	30381505
+rs1485175 	rs1485175 	T 	C 	T/C 	93 	53 	40 	3 	7620789
+rs3749507 	None 	A 	None 	A/A 	146 	None 	None 	4 	128565000
+rs3108237 	rs3108237 	G 	A 	A/A 	199 	0 	198 	4 	186112111
+rs6596422 	None 	G 	None 	G/G 	87 	None 	None 	5 	137426447
+rs1700490 	rs1700490 	G 	A 	G/A 	130 	69 	60 	5 	176402401
+rs3736782 	None 	C 	None 	C/C 	139 	None 	None 	6 	26505403
+rs257376 	rs257376 	G 	A 	G/A 	133 	72 	61 	7 	106799997
+rs2241802 	rs2241802 	A 	G 	G/G 	186 	0 	186 	8 	28384712
+rs944510 	None 	C 	None 	None 	None 	None 	None 	9 	117853022
+rs2901343 	rs2901343 	C 	T 	T/T 	281 	0 	281 	10 	124457906
+rs1446464 	rs1446464 	C 	A 	C/A 	123 	67 	56 	11 	8486310
+rs1057908 	rs1057908 	T 	G 	G/G 	108 	0 	108 	12 	49230035
+rs9707144 	None 	T 	None 	T/T 	100 	None 	None 	13 	25356053
+rs3814871 	None 	G 	None 	G/G 	231 	None 	None 	14 	71444788
+rs1267657 	None 	T 	None 	T/T 	162 	None 	None 	15 	83215251
+rs33910368 	None 	A 	None 	None 	None 	None 	None 	16 	70569215
+rs3851 	None 	A 	None 	A/A 	139 	None 	None 	17 	4686414
+rs9958735 	rs9958735 	T 	C 	C/C 	162 	0 	161 	18 	56247180
+rs238148 	rs238148 	C 	T 	T/T 	85 	0 	85 	20 	47850182
+rs1053744 	rs1053744 	A 	G 	A/G 	54 	28 	26 	22 	50885775
