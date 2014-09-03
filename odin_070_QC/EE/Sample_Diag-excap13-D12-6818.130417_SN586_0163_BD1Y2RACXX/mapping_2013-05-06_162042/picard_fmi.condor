@@ -1,0 +1,18 @@
+universe   = java
+executable = /tools/Picard/picard/FixMateInformation.jar
+arguments  = net.sf.picard.sam.FixMateInformation INPUT=/condor_sh/projects/Project_DIAG-excap13-2013-04-09_bis/Sample_Diag-excap13-D12-6818/mapping_2013-05-06_162042/results/130417_SN586_0163_BD1Y2RACXX_Sample_Diag-excap13-D12-6818_CTTGTA_L005.sam OUTPUT=/condor_sh/projects/Project_DIAG-excap13-2013-04-09_bis/Sample_Diag-excap13-D12-6818/mapping_2013-05-06_162042/results/130417_SN586_0163_BD1Y2RACXX_Sample_Diag-excap13-D12-6818_CTTGTA_L005.posiSrt.bam SORT_ORDER=coordinate VALIDATION_STRINGENCY=SILENT CREATE_INDEX=true
+jar_files  = /tools/Picard/picard/FixMateInformation.jar, /tools/Picard/snappy-java-1.0.3-rc3.jar
+Log        = /data/condor/submit_logs/130417_SN586_0163_BD1Y2RACXX_Sample_Diag-excap13-D12-6818_CTTGTA_L005.log
+Error      = /condor_sh/projects/Project_DIAG-excap13-2013-04-09_bis/Sample_Diag-excap13-D12-6818/mapping_2013-05-06_162042/logs//130417_SN586_0163_BD1Y2RACXX_Sample_Diag-excap13-D12-6818_CTTGTA_L005.posiSrt.bam.out
+
+notification=never
+should_transfer_files=YES
+when_to_transfer_output = ON_EXIT
+Requirements   =  (OpSys == "OSX" || OpSys == "LINUX") 
+request_cpus=1
+request_memory = 8 * 1024
+request_disk = 8 * 1024
+get_env = true
+java_vm_args = -Xmx4g -Djava.io.tmpdir=/condor_sh//java_tmp
+
+queue

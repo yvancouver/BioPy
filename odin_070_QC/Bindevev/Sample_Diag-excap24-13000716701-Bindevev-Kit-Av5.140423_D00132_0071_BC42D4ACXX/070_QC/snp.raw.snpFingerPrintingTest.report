@@ -1,0 +1,34 @@
+Sample ID: 13000716701	snp.raw.snpFingerPrintingTest.vcf	SNP-ID_310314_plate2_AD_hmj_mod.txt
+
+rs786906	T : T/T		T : T/T	 Matched
+rs2296292	C : C/C		C : C/C	 Matched
+rs1137288	Y : T/C		Y : C/T	 Matched
+rs1485175	Y : T/C		Y : C/T	 Matched
+rs3749507	G : G/G		G : G/G	 Matched
+rs3108237	A : A/A		A : A/A	 Matched
+rs6596422	G : G/G		G : G/G	 Matched
+rs1700490	R : G/A		R : A/G	 Matched
+rs3736782	A : A/A		A : A/A	 Matched
+rs257376	A : A/A		A : A/A	 Matched
+rs2241802	G : G/G		G : G/G	 Matched
+rs944510	Y : C/T		Y : C/T	 Matched
+rs2901343	Y : C/T		Y : C/T	 Matched
+rs1446464	A : A/A		A : A/A	 Matched
+rs1057908	G : G/G		G : G/G	 Matched
+rs9707144	C : C/C		C : C/C	 Matched
+rs3814871	G : G/G		G : G/G	 Matched
+rs1267657	T : T/T		T : T/T	 Matched
+rs33910368	A : A/A		A : A/A	 Matched
+rs3851	C : C/C		C : C/C	 Matched
+rs9958735	T : T/T		T : T/T	 Matched
+rs238148	Y : C/T		Y : C/T	 Matched
+rs1053744	R : A/G		R : G/A	 Matched
+
+Matched tests:	23
+Failed tests:	0
+Undetermined tests:	0
+HTS undetermined:	0
+Taq undetermined:	0
+
+
+Definition file:	/Volumes/data.odin/diagnosticBundle/script/amg/fingerprinting/testData/snpQC.V1.tab

@@ -1,0 +1,26 @@
+/Volumes/data1.odin/001_exome/diagnosticSamples//HSPogHA/Sample_Diag-excap24-14000158600-HSPogHA-Kit-Av5.140423_D00132_0071_BC42D4ACXX/060_delivery/Sample_Diag-excap24-14000158600-HSPogHA-Kit-Av5.140423_D00132_0071_BC42D4ACXX.snp.raw.snpFingerPrintingTest.vcf									
+Sample_Diag-excap24-14000158600-HSPogHA-Kit-Av5 									
+RS	RS	REF	ALT	Genotype	readDepth	allelic depth REF	allelic depth ALT	CHROM	POS
+rs786906 	rs786906 	T 	C 	C/C 	197 	0 	197 	1 	89271574
+rs2296292 	rs2296292 	A 	C 	A/C 	112 	60 	51 	1 	183086757
+rs1137288 	rs1137288 	T 	C 	T/C 	21 	13 	8 	2 	30381505
+rs1485175 	rs1485175 	T 	C 	T/C 	200 	112 	87 	3 	7620789
+rs3749507 	rs3749507 	A 	G 	A/G 	200 	106 	94 	4 	128565000
+rs3108237 	rs3108237 	G 	A 	A/A 	200 	0 	200 	4 	186112111
+rs6596422 	rs6596422 	G 	A 	A/A 	200 	0 	200 	5 	137426447
+rs1700490 	None 	G 	None 	G/G 	200 	None 	None 	5 	176402401
+rs3736782 	None 	C 	None 	C/C 	200 	None 	None 	6 	26505403
+rs257376 	rs257376 	G 	A 	G/A 	200 	116 	84 	7 	106799997
+rs2241802 	None 	A 	None 	A/A 	189 	None 	None 	8 	28384712
+rs944510 	None 	C 	None 	C/C 	200 	None 	None 	9 	117853022
+rs2901343 	rs2901343 	C 	T 	C/T 	200 	106 	94 	10 	124457906
+rs1446464 	rs1446464 	C 	A 	C/A 	200 	97 	103 	11 	8486310
+rs1057908 	None 	T 	None 	T/T 	80 	None 	None 	12 	49230035
+rs9707144 	rs9707144 	T 	C 	T/C 	99 	59 	40 	13 	25356053
+rs3814871 	None 	G 	None 	G/G 	200 	None 	None 	14 	71444788
+rs1267657 	None 	T 	None 	T/T 	200 	None 	None 	15 	83215251
+rs33910368 	None 	A 	None 	A/A 	117 	None 	None 	16 	70569215
+rs3851 	rs3851 	A 	C 	C/C 	62 	0 	62 	17 	4686414
+rs9958735 	None 	T 	None 	T/T 	200 	None 	None 	18 	56247180
+rs238148 	rs238148 	C 	T 	C/T 	134 	51 	83 	20 	47850182
+rs1053744 	rs1053744 	A 	G 	A/G 	200 	117 	83 	22 	50885775

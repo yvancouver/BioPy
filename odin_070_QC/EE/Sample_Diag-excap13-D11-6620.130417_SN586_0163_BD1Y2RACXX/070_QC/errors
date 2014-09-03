@@ -1,0 +1,7 @@
+Please check the results for D11-6620. Only one call have been made for this assayID C___1617938_1_
+
+pcus572:fingerprinting yvans$ grep -r D11-6620 /Volumes/data1.odin-1/001_exome/diagnosticSamples/EE/Sample_Diag-excap13-D11-6620.130417_SN586_0163_BD1Y2RACXX/070_QC/SNP-ID_250413_AD_HJ_EN.txt |grep C___1617938_1_
+29	D11-6620	C___1617938_1_	1.732	8.393	Both	100.0	Manual	Unknown	1726.4868
+
+Only one assay was performed for this snp, Normally two results per snp should be doen for the TaqMan procedure
+

@@ -1,0 +1,10 @@
+
+JOB    A /condor_sh/projects/Project_DIAG-excap13-2013-04-09/Sample_Diag-excap13-D11-6620/mapping_2013-05-06_155947//novoalign.condor
+JOB    B /condor_sh/projects/Project_DIAG-excap13-2013-04-09/Sample_Diag-excap13-D11-6620/mapping_2013-05-06_155947//picard_fmi.condor
+JOB    C /condor_sh/projects/Project_DIAG-excap13-2013-04-09/Sample_Diag-excap13-D11-6620/mapping_2013-05-06_155947//picard_casm.condor
+SCRIPT POST B /condor_sh/projects/Project_DIAG-excap13-2013-04-09/Sample_Diag-excap13-D11-6620/mapping_2013-05-06_155947//updateBAMheader.sh
+PARENT A CHILD B
+PARENT B CHILD C
+RETRY  A 3
+RETRY  B 3
+RETRY  C 3

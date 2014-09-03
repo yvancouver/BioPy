@@ -1,0 +1,39 @@
+# Sample_Diag-excap19-13000852600-LMBB-KIT-Av5
+# LMBB_OUS_medGen_v01_b37.transcripts.csv
+# Variant Calling Pipeline is V.06Feb2014
+
+
+Sample ID: 13000852600	snp.raw.snpFingerPrintingTest.vcf	SNP-ID_plate2_131113_AD_VB.txt
+
+rs786906	Y : T/C		Y : C/T	 Matched
+rs2296292	M : A/C		M : A/C	 Matched
+rs1137288	C : C/C		C : C/C	 Matched
+rs1485175	C : C/C		C : C/C	 Matched
+rs3749507	A : A/A		A : A/A	 Matched
+rs3108237	A : A/A		A : A/A	 Matched
+rs6596422	R : G/A		R : A/G	 Matched
+rs1700490	A : A/A		A : A/A	 Matched
+rs3736782	A : A/A		A : A/A	 Matched
+rs257376	G : G/G		G : G/G	 Matched
+rs2241802	A : A/A		A : A/A	 Matched
+rs944510	Y : C/T		Y : C/T	 Matched
+rs2901343	C : C/C		C : C/C	 Matched
+rs1446464	A : A/A		A : A/A	 Matched
+rs1057908	T : T/T		T : T/T	 Matched
+rs9707144	C : C/C		C : C/C	 Matched
+rs3814871	G : G/G		G : G/G	 Matched
+rs1267657	C : C/C		C : C/C	 Matched
+rs33910368	T : T/T		T : T/T	 Matched
+rs3851	C : C/C		C : C/C	 Matched
+rs9958735	Y : T/C		Y : C/T	 Matched
+rs238148	Y : C/T		Y : C/T	 Matched
+rs1053744	R : A/G		R : G/A	 Matched
+
+Matched tests:	23
+Failed tests:	0
+Undetermined tests:	0
+HTS undetermined:	0
+Taq undetermined:	0
+
+
+Definition file:	/data/common/fingerprinting/snpQC.V1.tab

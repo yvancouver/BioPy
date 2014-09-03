@@ -1,0 +1,36 @@
+Sample ID: 13000766100	Sample_Diag-excap17-13000766100-KIT-AI50Mbv5.131009_7001448_0223_AC2G2UACXX.snp.raw.snpFingerPrintingTest.vcf	SNP-ID_plate_2_240913_AD_HJ.txt
+
+rs786906	Y : T/C		Y : C/T	 Matched
+rs2296292	C : C/C		C : C/C	 Matched
+rs1137288	Y : T/C		Y : C/T	 Matched
+rs1485175	Y : T/C		Y : C/T	 Matched
+rs3749507	0 : 0		R : A/G	undetermined
+rs3108237	R : G/A		R : A/G	 Matched
+rs6596422	A : A/A		A : A/A	 Matched
+rs1700490	A : A/A		A : A/A	 Matched
+rs3736782	M : C/A		M : A/C	 Matched
+rs257376	R : G/A		R : A/G	 Matched
+rs2241802	G : G/G		G : G/G	 Matched
+rs944510	0 : 0		T : T/T	undetermined
+rs2901343	T : T/T		T : T/T	 Matched
+rs1446464	C : C/C		C : C/C	 Matched
+rs1057908	S : T/G		S : G/T	 Matched
+rs9707144	Y : T/C		Y : C/T	 Matched
+rs3814871	0 : 0		G : G/G	undetermined
+rs1267657	0 : 0		T : T/T	undetermined
+rs33910368	A : A/A		A : A/A	 Matched
+rs3851	A : A/A		M : A/C	Non Matched
+rs9958735	0 : 0		C : C/C	undetermined
+rs238148	Y : C/T		Y : C/T	 Matched
+rs1053744	R : A/G		R : G/A	 Matched
+
+Matched tests:	17
+Failed tests:	1
+Undetermined tests:	5
+HTS undetermined:	5
+Taq undetermined:	0
+
+
+Definition file:	/Users/yvans/Home/workspace/amg/fingerprinting/testData/snpQC.V1.tab
+An non matching snp is present in the data, please check these snps!
+rs3851

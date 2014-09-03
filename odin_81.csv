@@ -1,0 +1,26 @@
+/Volumes/data1.odin/001_exome/diagnosticSamples//Iktyose/Sample_Diag-excap19-136dup-Iktyose-KIT-Av5.140107_D00132_0060_AC3FCPACXX/060_delivery/Sample_Diag-excap19-136dup-Iktyose-KIT-Av5.140107_D00132_0060_AC3FCPACXX.snp.raw.snpFingerPrintingTest.vcf									
+Sample_Diag-excap19-136dup-Iktyose-KIT-Av5 									
+RS	RS	REF	ALT	Genotype	readDepth	allelic depth REF	allelic depth ALT	CHROM	POS
+rs786906 	None 	T 	None 	T/T 	189 	None 	None 	1 	89271574
+rs2296292 	rs2296292 	A 	C 	A/C 	105 	56 	49 	1 	183086757
+rs1137288 	None 	T 	None 	T/T 	20 	None 	None 	2 	30381505
+rs1485175 	rs1485175 	T 	C 	T/C 	197 	98 	99 	3 	7620789
+rs3749507 	rs3749507 	A 	G 	G/G 	200 	0 	200 	4 	128565000
+rs3108237 	rs3108237 	G 	A 	A/A 	200 	0 	200 	4 	186112111
+rs6596422 	None 	G 	None 	G/G 	200 	None 	None 	5 	137426447
+rs1700490 	rs1700490 	G 	A 	A/A 	133 	1 	132 	5 	176402401
+rs3736782 	rs3736782 	C 	A 	C/A 	165 	96 	69 	6 	26505403
+rs257376 	rs257376 	G 	A 	A/A 	200 	0 	200 	7 	106799997
+rs2241802 	rs2241802 	A 	G 	G/G 	163 	0 	163 	8 	28384712
+rs944510 	None 	C 	None 	C/C 	200 	None 	None 	9 	117853022
+rs2901343 	rs2901343 	C 	T 	C/T 	200 	120 	80 	10 	124457906
+rs1446464 	rs1446464 	C 	A 	C/A 	172 	97 	75 	11 	8486310
+rs1057908 	None 	T 	None 	T/T 	64 	None 	None 	12 	49230035
+rs9707144 	rs9707144 	T 	C 	C/C 	79 	0 	79 	13 	25356053
+rs3814871 	None 	G 	None 	G/G 	200 	None 	None 	14 	71444788
+rs1267657 	rs1267657 	T 	C 	T/C 	200 	118 	82 	15 	83215251
+rs33910368 	rs33910368 	A 	T 	A/T 	125 	75 	50 	16 	70569215
+rs3851 	rs3851 	A 	C 	C/C 	54 	0 	54 	17 	4686414
+rs9958735 	rs9958735 	T 	C 	C/C 	195 	1 	194 	18 	56247180
+rs238148 	None 	C 	None 	C/C 	106 	None 	None 	20 	47850182
+rs1053744 	rs1053744 	A 	G 	G/G 	166 	0 	166 	22 	50885775

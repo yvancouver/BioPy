@@ -1,0 +1,39 @@
+# Sample_Diag-excap19-13000766900-VaBindevev-KIT-Av5
+# VaBindevev_OUS_medGen_v01_b37.transcripts.csv
+# Variant Calling Pipeline is V.06Feb2014
+
+
+Sample ID: 13000766900	snp.raw.snpFingerPrintingTest.vcf	SNP-ID_plate1_131113_AD_VB.txt
+
+rs786906	Y : T/C		Y : C/T	 Matched
+rs2296292	M : A/C		M : A/C	 Matched
+rs1137288	C : C/C		C : C/C	 Matched
+rs1485175	T : T/T		T : T/T	 Matched
+rs3749507	G : G/G		G : G/G	 Matched
+rs3108237	A : A/A		A : A/A	 Matched
+rs6596422	A : A/A		A : A/A	 Matched
+rs1700490	A : A/A		A : A/A	 Matched
+rs3736782	M : C/A		M : A/C	 Matched
+rs257376	R : G/A		R : A/G	 Matched
+rs2241802	G : G/G		G : G/G	 Matched
+rs944510	C : C/C		C : C/C	 Matched
+rs2901343	Y : C/T		Y : C/T	 Matched
+rs1446464	C : C/C		C : C/C	 Matched
+rs1057908	G : G/G		G : G/G	 Matched
+rs9707144	Y : T/C		Y : C/T	 Matched
+rs3814871	R : G/A		R : A/G	 Matched
+rs1267657	T : T/T		T : T/T	 Matched
+rs33910368	T : T/T		T : T/T	 Matched
+rs3851	M : A/C		M : A/C	 Matched
+rs9958735	T : T/T		T : T/T	 Matched
+rs238148	T : T/T		T : T/T	 Matched
+rs1053744	G : G/G		G : G/G	 Matched
+
+Matched tests:	23
+Failed tests:	0
+Undetermined tests:	0
+HTS undetermined:	0
+Taq undetermined:	0
+
+
+Definition file:	/Volumes/data.odin/diagnosticBundle/script/amg/fingerprinting/testData/snpQC.V1.tab

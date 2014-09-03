@@ -1,0 +1,34 @@
+Sample ID: 13000894800	snp.raw.snpFingerPrintingTest.vcf	SNP-ID_plate2_131113_AD_VB.txt
+
+rs786906	C : C/C		C : C/C	 Matched
+rs2296292	C : C/C		C : C/C	 Matched
+rs1137288	Y : T/C		Y : C/T	 Matched
+rs1485175	Y : T/C		Y : C/T	 Matched
+rs3749507	R : A/G		R : A/G	 Matched
+rs3108237	A : A/A		A : A/A	 Matched
+rs6596422	R : G/A		R : A/G	 Matched
+rs1700490	A : A/A		A : A/A	 Matched
+rs3736782	A : A/A		A : A/A	 Matched
+rs257376	G : G/G		G : G/G	 Matched
+rs2241802	A : A/A		A : A/A	 Matched
+rs944510	C : C/C		C : C/C	 Matched
+rs2901343	C : C/C		C : C/C	 Matched
+rs1446464	M : C/A		M : A/C	 Matched
+rs1057908	S : T/G		S : G/T	 Matched
+rs9707144	Y : T/C		Y : C/T	 Matched
+rs3814871	R : G/A		R : A/G	 Matched
+rs1267657	T : T/T		T : T/T	 Matched
+rs33910368	A : A/A		A : A/A	 Matched
+rs3851	M : A/C		M : A/C	 Matched
+rs9958735	C : C/C		C : C/C	 Matched
+rs238148	Y : C/T		Y : C/T	 Matched
+rs1053744	G : G/G		G : G/G	 Matched
+
+Matched tests:	23
+Failed tests:	0
+Undetermined tests:	0
+HTS undetermined:	0
+Taq undetermined:	0
+
+
+Definition file:	/Volumes/data.odin/common/fingerprinting/snpQC.V1.tab

@@ -1,0 +1,18 @@
+executable=/tools/Novoalign/$$(Arch)/$$(OpSys)/current/novoalign
+universe=vanilla
+notification=never
+should_transfer_files=YES
+when_to_transfer_output = ON_EXIT
+Requirements   = (OpSys == "OSX" || OpSys == "LINUX") 
+request_cpus=6
+request_memory = 6 * 1024
+request_disk = 8 * 1024
+get_env = true
+
+transfer_input_files=/condor_sh/novoalign/novoalign.lic
+arguments="-o SAM ''@RG\tID:Sample_Diag-excap13-D12-6818\tCN:NSC\tDS:Project_DIAG-excap13-2013-04-09_bis\tDT:2013-04-17\tPU:BD1Y2RACXX.L005\tPL:ILLUMINA\tSM:Sample_Diag-excap13-D12-6818\tLB:Sample_Diag-excap13-D12-6818'' -d  /condor_sh/novoalign/ref/novoalignRefDecoy_V2.07.17 -f /condor_sh/projects/Project_DIAG-excap13-2013-04-09_bis/Sample_Diag-excap13-D12-6818/data/Diag-excap13-D12-6818-KIT-AI50MbXT_CTTGTA_L005_R1_001.fastq.gz /condor_sh/projects/Project_DIAG-excap13-2013-04-09_bis/Sample_Diag-excap13-D12-6818/data/Diag-excap13-D12-6818-KIT-AI50MbXT_CTTGTA_L005_R2_001.fastq.gz -c 6 -F STDFQ -r R -i PE 200,50" 
+output = /condor_sh/projects/Project_DIAG-excap13-2013-04-09_bis/Sample_Diag-excap13-D12-6818/mapping_2013-05-06_162042/results//130417_SN586_0163_BD1Y2RACXX_Sample_Diag-excap13-D12-6818_CTTGTA_L005.sam
+error = /condor_sh/projects/Project_DIAG-excap13-2013-04-09_bis/Sample_Diag-excap13-D12-6818/mapping_2013-05-06_162042/logs//130417_SN586_0163_BD1Y2RACXX_Sample_Diag-excap13-D12-6818_CTTGTA_L005.sam.out
+log = /data/condor/submit_logs/130417_SN586_0163_BD1Y2RACXX_Sample_Diag-excap13-D12-6818_CTTGTA_L005.log
+queue
+

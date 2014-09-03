@@ -1,0 +1,18 @@
+universe   = java
+executable = /tools/Picard/picard/CollectAlignmentSummaryMetrics.jar
+arguments  = net.sf.picard.analysis.CollectAlignmentSummaryMetrics MAX_INSERT_SIZE=500 INPUT=/condor_sh/projects/Project_DIAG-excap13-2013-04-09_bis/Sample_Diag-excap13-D12-5972/mapping_2013-05-06_162058/results/130417_SN586_0163_BD1Y2RACXX_Sample_Diag-excap13-D12-5972_GCCAAT_L005.posiSrt.bam OUTPUT=/condor_sh/projects/Project_DIAG-excap13-2013-04-09_bis/Sample_Diag-excap13-D12-5972/mapping_2013-05-06_162058/results/collectAlignmentSummaryMetrics.txt REFERENCE_SEQUENCE=/condor_sh/gatk/ref/human_g1k_v37_decoy.fasta VALIDATION_STRINGENCY=SILENT
+jar_files  = /tools/Picard/picard/CollectAlignmentSummaryMetrics.jar, /tools/Picard/snappy-java-1.0.3-rc3.jar
+Log        = /data/condor/submit_logs/130417_SN586_0163_BD1Y2RACXX_Sample_Diag-excap13-D12-5972_GCCAAT_L005.log
+Error      = /condor_sh/projects/Project_DIAG-excap13-2013-04-09_bis/Sample_Diag-excap13-D12-5972/mapping_2013-05-06_162058/logs//collectAlignmentSummaryMetrics.txt.out
+
+notification=never
+should_transfer_files=YES
+when_to_transfer_output = ON_EXIT
+Requirements   =  (OpSys == "OSX" || OpSys == "LINUX") 
+request_cpus=1
+request_memory = 2 * 1024
+request_disk = 2 * 1024
+get_env = true
+java_vm_args = -Xmx4g -Djava.io.tmpdir=/condor_sh//java_tmp
+
+queue

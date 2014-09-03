@@ -1,0 +1,3 @@
+Running this under the root of Sample folder
+
+python /Users/yingsh/home/github/amg/variantcalling/pipeline/pipeline_current/fingerprinting/MergeResults.py

@@ -1,0 +1,8 @@
+# Sample_Diag-excap21-13000443401-EE-KIT-Av5
+# EE_OUS_medGen_v01_b37.transcripts.csv
+# Variant Calling Pipeline is V.06Feb2014
+
+
+Running this under the root of Sample folder
+
+python /Volumes/data.odin/diagnosticBundle/script/amg/fingerprinting/MergeResults.py
