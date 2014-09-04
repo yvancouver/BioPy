@@ -1,0 +1,39 @@
+# Sample_Diag-excap25-14000154000-HSPogHA-KIT-Av5
+# HSPogHA_OUS_medGen_v01_b37.transcripts.csv
+# Variant Calling Pipeline is V.06Feb2014
+
+
+Sample ID: D04-1712	snp.raw.snpFingerPrintingTest.vcf	SNP-ID_310314_plate2_AD_hmj_mod.txt
+
+rs786906	C : C/C		0 : 0/0	undetermined
+rs2296292	C : C/C		C : C/C	 Matched
+rs1137288	T : T/T		T : T/T	 Matched
+rs1485175	Y : T/C		Y : C/T	 Matched
+rs3749507	R : A/G		R : A/G	 Matched
+rs3108237	R : G/A		R : A/G	 Matched
+rs6596422	R : G/A		R : A/G	 Matched
+rs1700490	G : G/G		G : G/G	 Matched
+rs3736782	M : C/A		M : A/C	 Matched
+rs257376	R : G/A		R : A/G	 Matched
+rs2241802	A : A/A		A : A/A	 Matched
+rs944510	T : T/T		T : T/T	 Matched
+rs2901343	Y : C/T		Y : C/T	 Matched
+rs1446464	M : C/A		M : A/C	 Matched
+rs1057908	S : T/G		S : G/T	 Matched
+rs9707144	T : T/T		T : T/T	 Matched
+rs3814871	R : G/A		R : A/G	 Matched
+rs1267657	C : C/C		C : C/C	 Matched
+rs33910368	A : A/A		A : A/A	 Matched
+rs3851	A : A/A		A : A/A	 Matched
+rs9958735	Y : T/C		Y : C/T	 Matched
+rs238148	T : T/T		T : T/T	 Matched
+rs1053744	G : G/G		G : G/G	 Matched
+
+Matched tests:	22
+Failed tests:	0
+Undetermined tests:	1
+HTS undetermined:	0
+Taq undetermined:	1
+
+
+Definition file:	/Volumes/DATA.ODIN/diagnosticBundle/script/amg/fingerprinting/testData/snpQC.V1.tab

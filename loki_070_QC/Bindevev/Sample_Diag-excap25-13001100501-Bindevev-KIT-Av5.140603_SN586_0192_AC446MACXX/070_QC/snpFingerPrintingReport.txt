@@ -1,0 +1,3 @@
+Running this under the root of Sample folder
+
+python /Volumes/DATA.ODIN/diagnosticBundle/script/amg/fingerprinting/MergeResults.py

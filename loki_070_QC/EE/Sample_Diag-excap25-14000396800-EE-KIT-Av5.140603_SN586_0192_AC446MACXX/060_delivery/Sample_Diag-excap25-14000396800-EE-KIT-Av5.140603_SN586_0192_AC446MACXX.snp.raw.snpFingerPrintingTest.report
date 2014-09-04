@@ -1,0 +1,39 @@
+# Sample_Diag-excap25-14000396800-EE-KIT-Av5
+# EE_OUS_medGen_v01_b37.transcripts.csv
+# Variant Calling Pipeline is V.06Feb2014
+
+
+Sample ID: 14000396800	snp.raw.snpFingerPrintingTest.vcf	SNP-ID_070514_plate1_AD_verbog_hmj.txt
+
+rs786906	C : C/C		C : C/C	 Matched
+rs2296292	C : C/C		C : C/C	 Matched
+rs1137288	Y : T/C		Y : C/T	 Matched
+rs1485175	Y : T/C		Y : C/T	 Matched
+rs3749507	A : A/A		A : A/A	 Matched
+rs3108237	G : G/G		G : G/G	 Matched
+rs6596422	R : G/A		0 : 0/0	undetermined
+rs1700490	R : G/A		R : A/G	 Matched
+rs3736782	A : A/A		A : A/A	 Matched
+rs257376	R : G/A		R : A/G	 Matched
+rs2241802	R : A/G		R : A/G	 Matched
+rs944510	Y : C/T		Y : C/T	 Matched
+rs2901343	Y : C/T		Y : C/T	 Matched
+rs1446464	C : C/C		C : C/C	 Matched
+rs1057908	G : G/G		G : G/G	 Matched
+rs9707144	Y : T/C		Y : C/T	 Matched
+rs3814871	G : G/G		0 : 0/0	undetermined
+rs1267657	T : T/T		0 : 0/0	undetermined
+rs33910368	W : A/T		W : A/T	 Matched
+rs3851	M : A/C		M : A/C	 Matched
+rs9958735	Y : T/C		Y : C/T	 Matched
+rs238148	T : T/T		0 : 0/0	undetermined
+rs1053744	R : A/G		0 : 0/0	undetermined
+
+Matched tests:	18
+Failed tests:	0
+Undetermined tests:	5
+HTS undetermined:	0
+Taq undetermined:	5
+
+
+Definition file:	/Volumes/DATA.ODIN/diagnosticBundle/script/amg/fingerprinting/testData/snpQC.V1.tab

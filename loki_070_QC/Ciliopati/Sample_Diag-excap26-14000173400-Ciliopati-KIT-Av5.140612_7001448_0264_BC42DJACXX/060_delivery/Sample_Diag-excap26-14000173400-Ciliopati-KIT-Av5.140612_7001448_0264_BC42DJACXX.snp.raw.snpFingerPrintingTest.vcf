@@ -1,0 +1,140 @@
+##fileformat=VCFv4.1
+##FILTER=<ID=LowQual,Description="Low quality">
+##FORMAT=<ID=AD,Number=.,Type=Integer,Description="Allelic depths for the ref and alt alleles in the order listed">
+##FORMAT=<ID=DP,Number=1,Type=Integer,Description="Approximate read depth (reads with MQ=255 or with bad mates are filtered)">
+##FORMAT=<ID=GQ,Number=1,Type=Integer,Description="Genotype Quality">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##FORMAT=<ID=PL,Number=G,Type=Integer,Description="Normalized, Phred-scaled likelihoods for genotypes as defined in the VCF specification">
+##GATKCommandLine=<ID=UnifiedGenotyper,Version=2.8-1-g932cd3a,Date="Fri Jul 04 09:20:53 CEST 2014",Epoch=1404458453488,CommandLineOptions="analysis_type=UnifiedGenotyper input_file=[/Users/yingsh/home/result/Project_Diag-excap26-2014-11-06/Sample_Diag-excap26-14000173400-Ciliopati-KIT-Av5/060_delivery/all.realigned.markDup.baseQreCali.bam] read_buffer_size=null phone_home=AWS gatk_key=null tag=NA read_filter=[] intervals=[/Volumes/data.odin/diagnosticBundle/script/amg/snpFingerPrinting/intervals/snpFingerPrintingPos.interval_list] excludeIntervals=null interval_set_rule=UNION interval_merging=ALL interval_padding=0 reference_sequence=/Volumes/data.odin/diagnosticBundle/refData/dataDistro_r01_d01_diag/b37/genomic/gatkBundle_2.5/human_g1k_v37_decoy.fasta nonDeterministicRandomSeed=false disableDithering=false maxRuntime=-1 maxRuntimeUnits=MINUTES downsampling_type=BY_SAMPLE downsample_to_fraction=null downsample_to_coverage=200 baq=OFF baqGapOpenPenalty=40.0 fix_misencoded_quality_scores=false allow_potentially_misencoded_quality_scores=false useOriginalQualities=false defaultBaseQualities=-1 performanceLog=null BQSR=null quantize_quals=0 disable_indel_quals=false emit_original_quals=false preserve_qscores_less_than=6 globalQScorePrior=-1.0 allow_bqsr_on_reduced_bams_despite_repeated_warnings=false validation_strictness=SILENT remove_program_records=false keep_program_records=false sample_rename_mapping_file=null unsafe=null disable_auto_index_creation_and_locking_when_reading_rods=false num_threads=3 num_cpu_threads_per_data_thread=1 num_io_threads=0 monitorThreadEfficiency=false num_bam_file_handles=null read_group_black_list=null pedigree=[] pedigreeString=[] pedigreeValidationType=STRICT allow_intervals_with_unindexed_bam=false generateShadowBCF=false variant_index_type=DYNAMIC_SEEK variant_index_parameter=-1 logging_level=INFO log_to_file=null help=false version=false genotype_likelihoods_model=BOTH pcr_error_rate=1.0E-4 computeSLOD=false annotateNDA=false pair_hmm_implementation=LOGLESS_CACHING min_base_quality_score=17 max_deletion_fraction=0.05 allSitePLs=false min_indel_count_for_genotyping=5 min_indel_fraction_per_sample=0.25 indelGapContinuationPenalty=10 indelGapOpenPenalty=45 indelHaplotypeSize=80 indelDebug=false ignoreSNPAlleles=false allReadsSP=false ignoreLaneInfo=false reference_sample_calls=(RodBinding name= source=UNBOUND) reference_sample_name=null sample_ploidy=2 min_quality_score=1 max_quality_score=40 site_quality_prior=20 min_power_threshold_for_calling=0.95 min_reference_depth=100 exclude_filtered_reference_sites=false output_mode=EMIT_ALL_SITES heterozygosity=0.001 indel_heterozygosity=1.25E-4 genotyping_mode=DISCOVERY standard_min_confidence_threshold_for_calling=50.0 standard_min_confidence_threshold_for_emitting=0.0 alleles=(RodBinding name= source=UNBOUND) max_alternate_alleles=6 input_prior=[] contamination_fraction_to_filter=0.0 contamination_fraction_per_sample_file=null p_nonref_model=EXACT_INDEPENDENT exactcallslog=null dbsnp=(RodBinding name=dbsnp source=/Volumes/data.odin/diagnosticBundle/refData/dataDistro_r01_d01_diag/b37/genomic/gatkBundle_2.5/dbsnp_137.b37.vcf) comp=[] out=org.broadinstitute.sting.gatk.io.stubs.VariantContextWriterStub no_cmdline_in_header=org.broadinstitute.sting.gatk.io.stubs.VariantContextWriterStub sites_only=org.broadinstitute.sting.gatk.io.stubs.VariantContextWriterStub bcf=org.broadinstitute.sting.gatk.io.stubs.VariantContextWriterStub onlyEmitSamples=[] debug_file=null metrics_file=null annotation=[] excludeAnnotation=[] filter_reads_with_N_cigar=false filter_mismatching_base_and_quals=false filter_bases_not_stored=false">
+##INFO=<ID=AC,Number=A,Type=Integer,Description="Allele count in genotypes, for each ALT allele, in the same order as listed">
+##INFO=<ID=AF,Number=A,Type=Float,Description="Allele Frequency, for each ALT allele, in the same order as listed">
+##INFO=<ID=AN,Number=1,Type=Integer,Description="Total number of alleles in called genotypes">
+##INFO=<ID=BaseQRankSum,Number=1,Type=Float,Description="Z-score from Wilcoxon rank sum test of Alt Vs. Ref base qualities">
+##INFO=<ID=DB,Number=0,Type=Flag,Description="dbSNP Membership">
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Approximate read depth; some reads may have been filtered">
+##INFO=<ID=DS,Number=0,Type=Flag,Description="Were any of the samples downsampled?">
+##INFO=<ID=Dels,Number=1,Type=Float,Description="Fraction of Reads Containing Spanning Deletions">
+##INFO=<ID=FS,Number=1,Type=Float,Description="Phred-scaled p-value using Fisher's exact test to detect strand bias">
+##INFO=<ID=HaplotypeScore,Number=1,Type=Float,Description="Consistency of the site with at most two segregating haplotypes">
+##INFO=<ID=InbreedingCoeff,Number=1,Type=Float,Description="Inbreeding coefficient as estimated from the genotype likelihoods per-sample when compared against the Hardy-Weinberg expectation">
+##INFO=<ID=MLEAC,Number=A,Type=Integer,Description="Maximum likelihood expectation (MLE) for the allele counts (not necessarily the same as the AC), for each ALT allele, in the same order as listed">
+##INFO=<ID=MLEAF,Number=A,Type=Float,Description="Maximum likelihood expectation (MLE) for the allele frequency (not necessarily the same as the AF), for each ALT allele, in the same order as listed">
+##INFO=<ID=MQ,Number=1,Type=Float,Description="RMS Mapping Quality">
+##INFO=<ID=MQ0,Number=1,Type=Integer,Description="Total Mapping Quality Zero Reads">
+##INFO=<ID=MQRankSum,Number=1,Type=Float,Description="Z-score From Wilcoxon rank sum test of Alt vs. Ref read mapping qualities">
+##INFO=<ID=QD,Number=1,Type=Float,Description="Variant Confidence/Quality by Depth">
+##INFO=<ID=RPA,Number=.,Type=Integer,Description="Number of times tandem repeat unit is repeated, for each allele (including reference)">
+##INFO=<ID=RU,Number=1,Type=String,Description="Tandem repeat unit (bases)">
+##INFO=<ID=ReadPosRankSum,Number=1,Type=Float,Description="Z-score from Wilcoxon rank sum test of Alt vs. Ref read position bias">
+##INFO=<ID=STR,Number=0,Type=Flag,Description="Variant is a short tandem repeat">
+##contig=<ID=1,length=249250621,assembly=b37>
+##contig=<ID=2,length=243199373,assembly=b37>
+##contig=<ID=3,length=198022430,assembly=b37>
+##contig=<ID=4,length=191154276,assembly=b37>
+##contig=<ID=5,length=180915260,assembly=b37>
+##contig=<ID=6,length=171115067,assembly=b37>
+##contig=<ID=7,length=159138663,assembly=b37>
+##contig=<ID=8,length=146364022,assembly=b37>
+##contig=<ID=9,length=141213431,assembly=b37>
+##contig=<ID=10,length=135534747,assembly=b37>
+##contig=<ID=11,length=135006516,assembly=b37>
+##contig=<ID=12,length=133851895,assembly=b37>
+##contig=<ID=13,length=115169878,assembly=b37>
+##contig=<ID=14,length=107349540,assembly=b37>
+##contig=<ID=15,length=102531392,assembly=b37>
+##contig=<ID=16,length=90354753,assembly=b37>
+##contig=<ID=17,length=81195210,assembly=b37>
+##contig=<ID=18,length=78077248,assembly=b37>
+##contig=<ID=19,length=59128983,assembly=b37>
+##contig=<ID=20,length=63025520,assembly=b37>
+##contig=<ID=21,length=48129895,assembly=b37>
+##contig=<ID=22,length=51304566,assembly=b37>
+##contig=<ID=X,length=155270560,assembly=b37>
+##contig=<ID=Y,length=59373566,assembly=b37>
+##contig=<ID=MT,length=16569,assembly=b37>
+##contig=<ID=GL000207.1,length=4262,assembly=b37>
+##contig=<ID=GL000226.1,length=15008,assembly=b37>
+##contig=<ID=GL000229.1,length=19913,assembly=b37>
+##contig=<ID=GL000231.1,length=27386,assembly=b37>
+##contig=<ID=GL000210.1,length=27682,assembly=b37>
+##contig=<ID=GL000239.1,length=33824,assembly=b37>
+##contig=<ID=GL000235.1,length=34474,assembly=b37>
+##contig=<ID=GL000201.1,length=36148,assembly=b37>
+##contig=<ID=GL000247.1,length=36422,assembly=b37>
+##contig=<ID=GL000245.1,length=36651,assembly=b37>
+##contig=<ID=GL000197.1,length=37175,assembly=b37>
+##contig=<ID=GL000203.1,length=37498,assembly=b37>
+##contig=<ID=GL000246.1,length=38154,assembly=b37>
+##contig=<ID=GL000249.1,length=38502,assembly=b37>
+##contig=<ID=GL000196.1,length=38914,assembly=b37>
+##contig=<ID=GL000248.1,length=39786,assembly=b37>
+##contig=<ID=GL000244.1,length=39929,assembly=b37>
+##contig=<ID=GL000238.1,length=39939,assembly=b37>
+##contig=<ID=GL000202.1,length=40103,assembly=b37>
+##contig=<ID=GL000234.1,length=40531,assembly=b37>
+##contig=<ID=GL000232.1,length=40652,assembly=b37>
+##contig=<ID=GL000206.1,length=41001,assembly=b37>
+##contig=<ID=GL000240.1,length=41933,assembly=b37>
+##contig=<ID=GL000236.1,length=41934,assembly=b37>
+##contig=<ID=GL000241.1,length=42152,assembly=b37>
+##contig=<ID=GL000243.1,length=43341,assembly=b37>
+##contig=<ID=GL000242.1,length=43523,assembly=b37>
+##contig=<ID=GL000230.1,length=43691,assembly=b37>
+##contig=<ID=GL000237.1,length=45867,assembly=b37>
+##contig=<ID=GL000233.1,length=45941,assembly=b37>
+##contig=<ID=GL000204.1,length=81310,assembly=b37>
+##contig=<ID=GL000198.1,length=90085,assembly=b37>
+##contig=<ID=GL000208.1,length=92689,assembly=b37>
+##contig=<ID=GL000191.1,length=106433,assembly=b37>
+##contig=<ID=GL000227.1,length=128374,assembly=b37>
+##contig=<ID=GL000228.1,length=129120,assembly=b37>
+##contig=<ID=GL000214.1,length=137718,assembly=b37>
+##contig=<ID=GL000221.1,length=155397,assembly=b37>
+##contig=<ID=GL000209.1,length=159169,assembly=b37>
+##contig=<ID=GL000218.1,length=161147,assembly=b37>
+##contig=<ID=GL000220.1,length=161802,assembly=b37>
+##contig=<ID=GL000213.1,length=164239,assembly=b37>
+##contig=<ID=GL000211.1,length=166566,assembly=b37>
+##contig=<ID=GL000199.1,length=169874,assembly=b37>
+##contig=<ID=GL000217.1,length=172149,assembly=b37>
+##contig=<ID=GL000216.1,length=172294,assembly=b37>
+##contig=<ID=GL000215.1,length=172545,assembly=b37>
+##contig=<ID=GL000205.1,length=174588,assembly=b37>
+##contig=<ID=GL000219.1,length=179198,assembly=b37>
+##contig=<ID=GL000224.1,length=179693,assembly=b37>
+##contig=<ID=GL000223.1,length=180455,assembly=b37>
+##contig=<ID=GL000195.1,length=182896,assembly=b37>
+##contig=<ID=GL000212.1,length=186858,assembly=b37>
+##contig=<ID=GL000222.1,length=186861,assembly=b37>
+##contig=<ID=GL000200.1,length=187035,assembly=b37>
+##contig=<ID=GL000193.1,length=189789,assembly=b37>
+##contig=<ID=GL000194.1,length=191469,assembly=b37>
+##contig=<ID=GL000225.1,length=211173,assembly=b37>
+##contig=<ID=GL000192.1,length=547496,assembly=b37>
+##contig=<ID=NC_007605,length=171823,assembly=b37>
+##contig=<ID=hs37d5,length=35477943,assembly=b37>
+##reference=file:///Volumes/data.odin/diagnosticBundle/refData/dataDistro_r01_d01_diag/b37/genomic/gatkBundle_2.5/human_g1k_v37_decoy.fasta
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	Sample_Diag-excap26-14000173400-Ciliopati-KIT-Av5
+1	89271574	rs786906	T	C	4422.77	.	AC=2;AF=1.00;AN=2;DB;DP=145;Dels=0.00;FS=0.000;HaplotypeScore=0.0000;MLEAC=2;MLEAF=1.00;MQ=70.00;MQ0=0;QD=30.50	GT:AD:DP:GQ:PL	1/1:0,145:145:99:4451,361,0
+1	183086757	rs2296292	A	C	2214.77	.	AC=2;AF=1.00;AN=2;DB;DP=74;Dels=0.00;FS=0.000;HaplotypeScore=1.9312;MLEAC=2;MLEAF=1.00;MQ=70.00;MQ0=0;QD=29.93	GT:AD:DP:GQ:PL	1/1:0,74:74:99:2243,193,0
+2	30381505	rs1137288	T	C	693.77	.	AC=2;AF=1.00;AN=2;DB;DP=21;Dels=0.00;FS=0.000;HaplotypeScore=0.0000;MLEAC=2;MLEAF=1.00;MQ=70.00;MQ0=0;QD=33.04	GT:AD:DP:GQ:PL	1/1:0,21:21:60:722,60,0
+3	7620789	rs1485175	T	C	2778.77	.	AC=1;AF=0.500;AN=2;BaseQRankSum=-4.276;DB;DP=200;Dels=0.00;FS=8.127;HaplotypeScore=5.7738;MLEAC=1;MLEAF=0.500;MQ=70.00;MQ0=0;MQRankSum=0.661;QD=13.89;ReadPosRankSum=-0.983	GT:AD:DP:GQ:PL	0/1:95,105:200:99:2807,0,2513
+4	128565000	rs3749507	A	G	6570.77	.	AC=2;AF=1.00;AN=2;BaseQRankSum=1.316;DB;DP=200;Dels=0.00;FS=0.000;HaplotypeScore=2.9811;MLEAC=2;MLEAF=1.00;MQ=70.00;MQ0=0;MQRankSum=-0.208;QD=32.85;ReadPosRankSum=-1.334	GT:AD:DP:GQ:PL	1/1:1,199:200:99:6599,497,0
+4	186112111	rs3108237	G	A	5515.77	.	AC=2;AF=1.00;AN=2;DB;DP=179;Dels=0.00;FS=0.000;HaplotypeScore=2.8291;MLEAC=2;MLEAF=1.00;MQ=70.00;MQ0=0;QD=30.81	GT:AD:DP:GQ:PL	1/1:0,179:179:99:5544,445,0
+5	137426447	rs6596422	G	A	4001.77	.	AC=2;AF=1.00;AN=2;DB;DP=131;Dels=0.00;FS=0.000;HaplotypeScore=0.5784;MLEAC=2;MLEAF=1.00;MQ=70.00;MQ0=0;QD=30.55	GT:AD:DP:GQ:PL	1/1:0,130:131:99:4030,322,0
+5	176402401	rs1700490	G	A	1736.77	.	AC=1;AF=0.500;AN=2;BaseQRankSum=3.307;DB;DP=129;Dels=0.00;FS=0.000;HaplotypeScore=5.8446;MLEAC=1;MLEAF=0.500;MQ=70.00;MQ0=0;MQRankSum=0.040;QD=13.46;ReadPosRankSum=0.120	GT:AD:DP:GQ:PL	0/1:62,67:129:99:1765,0,1572
+6	26505403	rs3736782	C	A	1551.77	.	AC=1;AF=0.500;AN=2;BaseQRankSum=-9.996;DB;DP=152;Dels=0.00;FS=1.292;HaplotypeScore=0.8667;MLEAC=1;MLEAF=0.500;MQ=70.00;MQ0=0;MQRankSum=-0.786;QD=10.21;ReadPosRankSum=0.218	GT:AD:DP:GQ:PL	0/1:88,64:152:99:1580,0,2404
+7	106799997	rs257376	G	A	2692.77	.	AC=1;AF=0.500;AN=2;BaseQRankSum=-1.607;DB;DP=200;Dels=0.00;FS=8.334;HaplotypeScore=4.0665;MLEAC=1;MLEAF=0.500;MQ=70.00;MQ0=0;MQRankSum=-2.313;QD=13.46;ReadPosRankSum=2.450	GT:AD:DP:GQ:PL	0/1:102,98:200:99:2721,0,2811
+8	28384712	rs2241802	A	G	5067.77	.	AC=2;AF=1.00;AN=2;DB;DP=151;Dels=0.00;FS=0.000;HaplotypeScore=0.0000;MLEAC=2;MLEAF=1.00;MQ=70.00;MQ0=0;QD=33.56	GT:AD:DP:GQ:PL	1/1:0,151:151:99:5096,394,0
+9	117853022	rs944510	C	T	2133.77	.	AC=1;AF=0.500;AN=2;BaseQRankSum=-7.875;DB;DP=200;Dels=0.00;FS=0.000;HaplotypeScore=6.6930;MLEAC=1;MLEAF=0.500;MQ=69.73;MQ0=0;MQRankSum=0.645;QD=10.67;ReadPosRankSum=0.443	GT:AD:DP:GQ:PL	0/1:118,82:200:99:2162,0,3247
+10	124457906	rs2901343	C	T	2083.77	.	AC=1;AF=0.500;AN=2;BaseQRankSum=5.404;DB;DP=196;Dels=0.00;FS=2.511;HaplotypeScore=2.9967;MLEAC=1;MLEAF=0.500;MQ=70.00;MQ0=0;MQRankSum=-0.589;QD=10.63;ReadPosRankSum=0.663	GT:AD:DP:GQ:PL	0/1:111,85:196:99:2112,0,2802
+11	8486310	.	C	.	533.23	.	AN=2;DP=200;MQ=70.00;MQ0=0	GT:DP	0/0:200
+12	49230035	rs1057908	T	G	526.77	.	AC=1;AF=0.500;AN=2;BaseQRankSum=4.312;DB;DP=38;Dels=0.00;FS=4.947;HaplotypeScore=0.0000;MLEAC=1;MLEAF=0.500;MQ=70.00;MQ0=0;MQRankSum=0.424;QD=13.86;ReadPosRankSum=0.307	GT:AD:DP:GQ:PL	0/1:18,20:38:99:555,0,446
+13	25356053	rs9707144	T	C	3721.77	.	AC=2;AF=1.00;AN=2;DB;DP=129;Dels=0.00;FS=0.000;HaplotypeScore=8.8552;MLEAC=2;MLEAF=1.00;MQ=70.00;MQ0=0;QD=28.85	GT:AD:DP:GQ:PL	1/1:0,129:129:99:3750,310,0
+14	71444788	rs3814871	G	A	2152.77	.	AC=1;AF=0.500;AN=2;BaseQRankSum=-4.530;DB;DP=200;Dels=0.00;FS=8.082;HaplotypeScore=9.5718;MLEAC=1;MLEAF=0.500;MQ=70.00;MQ0=0;MQRankSum=0.230;QD=10.76;ReadPosRankSum=1.183	GT:AD:DP:GQ:PL	0/1:115,85:200:99:2181,0,3141
+15	83215251	.	T	.	546.23	.	AN=2;DP=200;MQ=70.00;MQ0=0	GT:DP	0/0:200
+16	70569215	rs33910368	A	T	3137.77	.	AC=2;AF=1.00;AN=2;DB;DP=102;Dels=0.00;FS=0.000;HaplotypeScore=0.0000;MLEAC=2;MLEAF=1.00;MQ=70.00;MQ0=0;QD=30.76	GT:AD:DP:GQ:PL	1/1:0,102:102:99:3166,250,0
+17	4686414	rs3851	A	C	751.77	.	AC=1;AF=0.500;AN=2;BaseQRankSum=3.791;DB;DP=61;Dels=0.00;FS=4.209;HaplotypeScore=0.0000;MLEAC=1;MLEAF=0.500;MQ=70.00;MQ0=0;MQRankSum=0.007;QD=12.32;ReadPosRankSum=3.387	GT:AD:DP:GQ:PL	0/1:32,29:61:99:780,0,795
+18	56247180	rs9958735	T	C	2383.77	.	AC=1;AF=0.500;AN=2;BaseQRankSum=8.932;DB;DP=161;Dels=0.00;FS=2.784;HaplotypeScore=3.5456;MLEAC=1;MLEAF=0.500;MQ=70.00;MQ0=0;MQRankSum=-0.915;QD=14.81;ReadPosRankSum=-0.587	GT:AD:DP:GQ:PL	0/1:79,82:161:99:2412,0,2066
+20	47850182	rs238148	C	T	885.77	.	AC=1;AF=0.500;AN=2;BaseQRankSum=-5.239;DB;DP=80;Dels=0.00;FS=9.606;HaplotypeScore=0.9987;MLEAC=1;MLEAF=0.500;MQ=70.00;MQ0=0;MQRankSum=-1.795;QD=11.07;ReadPosRankSum=0.919	GT:AD:DP:GQ:PL	0/1:40,40:80:99:914,0,1208
+22	50885775	.	A	.	392.23	.	AN=2;DP=149;MQ=70.00;MQ0=0	GT:DP	0/0:149
