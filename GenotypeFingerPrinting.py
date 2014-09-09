@@ -63,6 +63,7 @@ listsnps = ['rs786906',
 number_of_snps = 0
 number_of_records = 0
 for record in vcf_reader:
+    print record.INFO['QD']
     number_of_records += 1
     ad = True
     #print rs, "\t=\t", record.ID
@@ -97,7 +98,7 @@ for record in vcf_reader:
     #else:
     #        print 'AD not called'
     
-    details_of_snp[(record.CHROM,record.POS)] = [record.ID,record.REF,record.ALT,call.gt_bases,read_depth,allelic_depth,record.CHROM,record.POS]
+    details_of_snp[(record.CHROM,record.POS)] = [record.ID,record.REF,record.ALT, record.INFO['MQ'],call.gt_bases,read_depth,allelic_depth,record.CHROM,record.POS]
     list_of_snps[vcf_reader.samples[0]] = details_of_snp
     #print"\n\n"
     
@@ -105,12 +106,12 @@ for key in list_of_snps.keys():
     #print list_of_snps[key].keys()
     #print list_of_snps[key]
     print key,"\t\t\t\t\t\t\t\t\t"
-    print "RS\tRS\tREF\tALT\tGenotype\treadDepth\tallelic depth REF\tallelic depth ALT\tCHROM\tPOS"
+    print "RS\tRS\tREF\tALT\tMQ\tGenotype\treadDepth\tallelic depth REF\tallelic depth ALT\tCHROM\tPOS"
 
     for snp in list_of_snps[key].keys():
         number_of_snps += 1
         #print snp
         #number_item = len(list_of_snps[key][snp])
         #print number_item
-        
-        print listsnps[number_of_snps-1],"\t",list_of_snps[key][snp][0],"\t",str(list_of_snps[key][snp][1][0]),"\t",list_of_snps[key][snp][2][0],"\t",list_of_snps[key][snp][3],"\t",list_of_snps[key][snp][4],"\t",list_of_snps[key][snp][5][0],"\t",list_of_snps[key][snp][5][1],"\t",list_of_snps[key][snp][6],"\t",list_of_snps[key][snp][7]
+        #print list_of_snps[key][snp]
+        print listsnps[number_of_snps-1],"\t",list_of_snps[key][snp][0],"\t",str(list_of_snps[key][snp][1][0]),"\t",list_of_snps[key][snp][2][0],"\t",list_of_snps[key][snp][3],"\t",list_of_snps[key][snp][4],"\t",list_of_snps[key][snp][5],"\t",list_of_snps[key][snp][6][0],"\t",list_of_snps[key][snp][6][1],"\t",list_of_snps[key][snp][7],"\t",list_of_snps[key][snp][8]
